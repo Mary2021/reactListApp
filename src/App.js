@@ -9,8 +9,8 @@ import { Input, Table, Space, Button } from 'antd';
 
 export default function App() {
   const [list, setList] = useState([]);
-  const [input, setInput] = useState('');
-  const [count, setCount] = useState(0);
+  const [input, setInput] = useState();
+  const [count, setCount] = useState();
   const [data, setData] = useState([]);
 
   const notify = () => toast("Kustutamine õnnestus!");
@@ -26,9 +26,6 @@ export default function App() {
         error: 'Promise rejected 🤯'
       }
     )
-  /*toast.success("Success Notification !", {
-    position: toast.POSITION.TOP_CENTER
-  });*/
   }
   
   //setListInput
@@ -60,12 +57,6 @@ export default function App() {
       dataIndex: data.index,
       key: 'index',
     },
-    /*{
-      title: 'Name',
-      dataIndex: 'name',
-      key: 'name',
-      render: text => <a>{input}</a>,
-    },*/
     {
       title: 'Action',
       dataIndex: 'action',
@@ -85,15 +76,7 @@ export default function App() {
     },
   ];
 
-  /*const data = [
-    {
-      key: '1',
-      name: 'John',
-    },
-  ];*/
-
-
-return (
+  return (
   <div className="App">
     <div className="App-body">
       <div className='inputDiv'>
@@ -115,9 +98,6 @@ return (
       <div>
       <ToastContainer autoClose={1000} />
     </div>
-      {/*<p>
-        You clicked {count} times and added {input}
-      </p>*/}
       {/*map funktsioon annab esimese argumendina listi elemendi, teise argumendina selle järjekorra numbri*/}
       <ul>{list.map((el, i) => <ListItem 
       index={i} 
