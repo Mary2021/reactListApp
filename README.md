@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Ant Design React App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Ant Design](https://4x.ant.design/).
 
 ## Available Scripts
 
@@ -64,6 +64,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## Deploying a React App to GitHub Pages 
+[https://github.com/gitname/react-gh-pages](https://github.com/gitname/react-gh-pages)
 
 ### `npm run build` fails to minify
 
